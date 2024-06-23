@@ -140,6 +140,39 @@ h6 {
 .btnStyle2:hover{
   background: #703591;
 }
+
+
+
+.btnStyle3{
+  display: inline-block;
+  padding: 13px 70px 14px 20px;
+  border-radius: 30px;
+  color: #fff;
+  transition: none;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+ 
+ 
+ 
+  background: #8b59a7;
+  transition: all 0.4s;
+  position: relative;
+}
+.btnStyle3 i{
+  font-size: 35px;
+  color: #fff;
+  right: 10px;
+  position: absolute;
+  top: 1px;
+}
+.btnStyle3:hover{
+  background: #8226b5;
+  color: #fff;
+}
+.btnStyle3:hover i{
+  color: #fff;
+}
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -1087,7 +1120,74 @@ section {
  
 
  
+/*--------------------------------------------------------------
+# exhibitions Posts Section
+--------------------------------------------------------------*/
+.exhibitions-posts{
+  background: #f5f3eb;
+}
+.exhibitions-posts article {
+  background: #ffffff;
+ /* box-shadow: 0 4px 16px color-mix(in srgb, var(--default-color), transparent 90%);*/
+  padding: 30px 30px 20px 30px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.exhibitions-posts .post-img {
+  max-height: 240px;
+  margin: -30px -30px -15px -30px;
+  overflow: hidden;
+}
+
+.exhibitions-posts .post-category {
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 10px;
+}
+
+.exhibitions-posts .title {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0 0 0px 20px;
+  margin: 0 0 0px 0;
+  font-family: 'Instrument Sans';
+}
+
+.exhibitions-posts .title a {
+  color: #000;
+  transition: 0.3s;
+}
+
+.exhibitions-posts .title a:hover {
+  color: #8226b5;
+}
+
+.exhibitions-posts .post-author-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.exhibitions-posts .post-author {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.exhibitions-posts .post-meta {
+  font-size: 17px;
+  background: #b773dc;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #fff;
+   
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+    text-align: center;
+}
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
