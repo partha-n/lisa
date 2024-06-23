@@ -49,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+ 
 }
 
 /*--------------------------------------------------------------
@@ -802,18 +802,24 @@ section {
 .tranding .count-box {
  background: #f5f3eb;
   padding: 35px;
+  transition: 0.3s;
   width: 100%;
+  height: 100%;
 }
 .count-box-img{
   width: 100%;
   overflow: hidden;
   height: 100%;
   position: relative;
+  transition: 0.3s;
+  border: 0;
 }
 .count-box-img img{
   object-fit: cover;
   height: 100%;
   width: 100%;
+  transition: 0.3s;
+  scale: 1;
 }
 .boxImg-ico{
   position:absolute;
@@ -823,18 +829,21 @@ section {
 .boxImg-ico img{
   width: inherit;
   height: inherit;
+
+ 
 }
 .boxImg-ico i{
   font-size: 25px;
 }
 .tranding .count-box h3{
   font-family: 'Anthelion';
+  transition: 0.3s;
 }
 .tranding .count-box i {
   display: block;
   font-size: 30px;
   color: #8226b5;
-  float: left;
+  transition: 0.3s;
 }
 
 .tranding .count-box span {
@@ -849,11 +858,22 @@ section {
 .tranding .count-box p {
   padding: 0px 0 15px 0;
   margin: 0;
+  transition: 0.3s;
  
   font-size: 15px;
 }
+.trandingRow:hover .count-box{
+  background: #8b59a7;
 
- 
+}
+.trandingRow:hover .count-box p, .trandingRow:hover .count-box h3{
+  color: #fff;
+
+}
+.trandingRow:hover .count-box-img img{
+  border: 5px solid #8b59a7;
+  scale: 1.2;
+}
 
 /*--------------------------------------------------------------
 # Why Us
@@ -1189,12 +1209,43 @@ section {
     text-align: center;
 }
 /*--------------------------------------------------------------
+# Medium of Paintings
+--------------------------------------------------------------*/
+ 
+.mediumPaintings {
+  background: #8b59a7;
+  padding-top: 60px;
+  color: #fff;
+}
+.mediumPaintings .section-title h2{
+  color: #fff;
+}
+.mediumPaintings .section-title p{
+  color: #fff;
+}
+.mediumTab .nav-pills .nav-link{
+  color: #ffffff7a;
+font-size: 20px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1px;
+border-radius: 0;
+text-align: left;
+border-left: 5px solid #ffffff00;
+min-width: 300px;
+margin-bottom: 10px;
+}
+.mediumTab .nav-pills .nav-link.active{
+  color: #ffffff;
+  background: none;
+  border-left: 5px solid #fff;
+}
+/*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonial-wrap {
-  padding-left: 50px;
+.testimonials{
+  background: #fffefe;
 }
-
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -1202,38 +1253,40 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px 30px 30px 60px;
-  margin: 30px 15px;
-  min-height: 200px;
-  box-shadow: 0px 0px 20px 0px rgba(11, 35, 65, 0.1);
-  position: relative;
-  background: #fff;
+  background: #f5f3eb;
+  min-height: 320px;
+  text-align: center;
+  padding-bottom: 10px;
+  height: 100%;
+  transition: all 0.3s ease-out 0s;
 }
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
-  border-radius: 10px;
-  border: 6px solid #fff;
-  position: absolute;
-  left: -45px;
+  border-radius: 50%;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  border: 5px solid #a238c0;
+  margin-bottom: 10px;
 }
 
 .testimonials .testimonial-item h3 {
   font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
+  transition: all 0.3s ease-out 0s;
+  margin: 0;
   color: #111;
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 15px;
-  color: #999;
-  margin: 0;
+  font-size: 18px;
+  transition: all 0.3s ease-out 0s;
+  margin: 0px;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #fdedea;
+  color: #edd3fc;
   font-size: 26px;
 }
 
@@ -1252,26 +1305,52 @@ section {
 
 .testimonials .testimonial-item p {
   font-style: italic;
-  margin: 15px auto 15px auto;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 20px 20px;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 20px;
+  margin-top: 40px;
   position: relative;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #d291f6;
   opacity: 1;
-  border: 1px solid #8226b5;
+ 
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #8226b5;
+  background-color: #8b59a7;
 }
+.testimonials .swiper-slide{
+ 
+    height: auto; 
+ 
+ 
 
+    align-self: stretch;
+}
+.testimonials .rev{
+
+}
+.testimonials .rev i{
+  color: #ca9236;
+  margin: 0px 2px;
+}
+.testimonials .testimonial-item:hover{
+  background: #8b59a7;
+}
+.testimonials .testimonial-item:hover p, .testimonials .testimonial-item:hover h4, .testimonials .testimonial-item:hover h3{
+  color: #fff;;
+}
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -1887,14 +1966,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #071527;
-  padding: 0 0 30px 0;
-  color: #fff;
+  background: #f0dff9;
+  padding: 0 0 10px 0;
+  color: #5e5d5d;
   font-size: 15px;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
+  background: #f5f3eb;
 }
 
 #footer .footer-top .footer-info {
@@ -1911,6 +1991,8 @@ section {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
+  font-family: 'Anthelion';
+  color: #8b59a7;
 }
 
 #footer .footer-top .footer-info p {
@@ -1920,33 +2002,34 @@ section {
   font-family: "Raleway", sans-serif;
 }
 
-#footer .footer-top .social-links a {
-  font-size: 18px;
+#footer .social-links a {
+  font-size: 28px;
   display: inline-block;
-  color: #fff;
+  color: #a964d0;
   line-height: 1;
-  padding: 8px 0;
+  padding: 0px 0;
   margin-right: 4px;
   border-radius: 4px;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  background: #0a1e38;
-}
+ }
 
-#footer .footer-top .social-links a:hover {
-  color: #fff;
-  background: #8226b5;
+#footer .social-links a:hover {
+  color: #780db5;
+ 
   text-decoration: none;
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+ 
   position: relative;
   padding-bottom: 12px;
+  font-family: 'Anthelion';
+  color: #8b59a7;
 }
 
 #footer .footer-top .footer-links {
@@ -1961,7 +2044,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #ef6445;
+  color: #8226b5;
   font-size: 18px;
   line-height: 1;
 }
@@ -1977,14 +2060,14 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #fff;
+  color: #5e5d5d;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ef6445;
+  color: #8226b5;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -2021,9 +2104,9 @@ section {
 }
 
 #footer .copyright {
-  border-top: 1px solid #0f2f57;
+  border-top: 00px solid #0f2f57;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 #footer .credits {
