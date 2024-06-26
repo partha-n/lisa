@@ -9,6 +9,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --bs-border-radius: 0rem;
+  --bs-border-color: #636363;
+}
 @font-face {
   font-family: 'Anthelion';
   src: url('../fonts/Anthelion.woff2') format('woff2'),
@@ -94,12 +98,12 @@ h6 {
 --------------------------------------------------------------*/
 .btnStyle{
   display: inline-block;
-  padding: 13px 70px 14px 20px;
+  padding: 13px 70px 12px 20px;
   border-radius: 30px;
   color: #404040;
   transition: none;
   font-size: 17px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-transform: uppercase;
  
  
@@ -145,12 +149,12 @@ h6 {
 
 .btnStyle3{
   display: inline-block;
-  padding: 13px 70px 14px 20px;
+  padding: 13px 70px 12px 20px;
   border-radius: 30px;
   color: #fff;
   transition: none;
   font-size: 17px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-transform: uppercase;
  
  
@@ -171,6 +175,25 @@ h6 {
   color: #fff;
 }
 .btnStyle3:hover i{
+  color: #fff;
+}
+
+.btnSryle4{
+ 
+  border-radius: 0px;
+  padding: 9px 25px 7px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border: 1px solid #8b59a7;
+      background: #8b59a7;
+  text-transform: uppercase;
+  color: #fff;
+}
+.btnSryle4:hover{
+       background: #631c8a;
   color: #fff;
 }
 .back-to-top {
@@ -1228,15 +1251,20 @@ section {
 .exhibitions-posts{
   background: #f5f3eb;
 }
+.exhibitionsInner{
+  background: #fff;
+}
 .exhibitions-posts article {
   background: #ffffff;
  /* box-shadow: 0 4px 16px color-mix(in srgb, var(--default-color), transparent 90%);*/
   padding: 30px 30px 20px 30px;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0px;
   overflow: hidden;
 }
-
+.exhibitions-posts.exhibitionsInner article{
+  background: #f5f3eb;
+}
 .exhibitions-posts .post-img {
   max-height: 240px;
   margin: -30px -30px -15px -30px;
@@ -1882,11 +1910,11 @@ margin-bottom: 10px;
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #0b2341;
+  color: #fff;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
-  background: #fff;
+  background: #8b59a7;
 }
 
 .contact .info-box i {
@@ -1898,25 +1926,32 @@ margin-bottom: 10px;
 }
 
 .contact .info-box h3 {
-  font-size: 20px;
-  color: #777777;
-  font-weight: 700;
-  margin: 10px 0;
+  font-size: 30px;
+  font-family: 'Anthelion';
+  color: #fff;
+ 
+  margin: 0px 0;
 }
 
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
   font-size: 15px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
+ 
+  padding: 0px;
   background: #fff;
 }
-
+.contact .php-email-form h3 {
+  font-size: 40px;
+  font-family: 'Anthelion';
+  color: #8b59a7;
+ 
+  margin: 0px 0 30px 0;
+}
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
@@ -1958,40 +1993,14 @@ margin-bottom: 10px;
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 15px;
-  border-radius: 4px;
-}
+ .conTesti.testimonials .testimonial-item{
+  background-color: #fff;
+ }
+ .conTesti.testimonials .testimonial-item:hover{
+  background: #8b59a7;
+ }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: #8226b5;
-}
-
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #8226b5;
-  border: 0;
-  padding: 10px 30px;
-  border-radius: 4px;
-  color: #fff;
-  transition: 0.4s;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #ef6445;
-}
-
+ 
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -2302,11 +2311,12 @@ margin-bottom: 10px;
 
 .blog-pagination li {
   margin: 0 5px;
+  background: #8b59a7;
   transition: 0.3s;
 }
 
 .blog-pagination li a {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #fff;
   padding: 7px 16px;
   display: flex;
   align-items: center;
@@ -2332,12 +2342,12 @@ margin-bottom: 10px;
 }
 
 .blog-details .article {
-  padding: 30px;
+  padding: 0px;
   box-shadow: 0 4px 16px color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .blog-details .post-img {
-  margin: -30px -30px 20px -30px;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -2361,7 +2371,7 @@ margin-bottom: 10px;
 
 .blog-details .content blockquote {
   overflow: hidden;
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
+  background-color: #8b59a7;
   padding: 60px;
   position: relative;
   text-align: center;
@@ -2369,12 +2379,13 @@ margin-bottom: 10px;
 }
 
 .blog-details .content blockquote p {
-  color: var(--default-color);
-  line-height: 1.6;
+  font-family: 'Anthelion'; 
+ 
   margin-bottom: 0;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 22px;
+ 
+  font-size: 30px;
+  line-height: 35px;
+  color: #fff;
 }
 
 .blog-details .content blockquote:after {
@@ -2423,8 +2434,10 @@ margin-bottom: 10px;
 
 .blog-details .meta-bottom {
   padding-top: 10px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
+  font-size: 15px;
+  font-weight: bold;
+  color: #262626;
+ }
 
 .blog-details .meta-bottom i {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
@@ -2455,11 +2468,16 @@ margin-bottom: 10px;
   list-style: none;
   display: inline;
   padding: 0;
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #262626;
 }
 
 .blog-details .meta-bottom .tags li {
   display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  color: #262626;
 }
 
 .blog-details .meta-bottom .tags li+li::before {
@@ -2583,9 +2601,9 @@ margin-bottom: 10px;
 }
 
 .comment-form form {
-  margin-top: 30px;
-  padding: 30px;
-  box-shadow: 0 4px 16px color-mix(in srgb, var(--default-color), transparent 90%);
+  margin-top: 0px;
+  padding: 0px;
+
 }
 
 .comment-form form h4 {
@@ -2596,39 +2614,7 @@ margin-bottom: 10px;
 .comment-form form p {
   font-size: 14px;
 }
-
-.comment-form form input {
-  background-color: var(--background-color);
-  color: var(--default-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  font-size: 14px;
-  border-radius: 4px;
-  padding: 10px 10px;
-}
-
-.comment-form form input:focus {
-  box-shadow: none;
-  border-color: var(--accent-color);
-}
-
-.comment-form form textarea {
-  background-color: var(--background-color);
-  color: var(--default-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
-  border-radius: 4px;
-  padding: 10px 10px;
-  font-size: 14px;
-  height: 120px;
-}
-
-.comment-form form textarea:focus {
-  box-shadow: none;
-  border-color: var(--accent-color);
-}
-
-.comment-form form .form-group {
-  margin-bottom: 25px;
-}
+ 
 
 .comment-form form .btn-primary {
   border-radius: 4px;
@@ -2817,7 +2803,129 @@ margin-bottom: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
-
+/********* EVENTS ***********/
+.eventSearch{
+  border: 1px solid #404040;
+  padding: 10px;
+}
+.eventSearch .form-control, .eventSearch .input-group-text{
+  border: 0px;
+  border-radius: 0;
+  background: none;
+}
+.eventSearch .form-select{
+  border: 0px;
+  border-radius: 0;
+  background-color: #fbf8f3;
+}
+.eventSearch  .form-control:focus, .eventSearch  .form-select:focus{
+  box-shadow:none;
+}
+.border-left{
+  border-left: 1px solid #404040;
+}
+.nextPre{
+  font-size: 22px;
+  padding-top: 6px;
+  padding-right: 30px;
+}
+.nextPre a{
+  padding: 0 10px;
+}
+.UpComSelect{
+  border: 0px;
+  font-size: 40px;
+  color: #404040;
+  background: none;
+  font-family: "EB Garamond", serif;
+  margin-left: 50px;
+}
+.monthList{
+  font-size: 17px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 15px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #262626;
+    font-family: "Josefin Sans", sans-serif;
+    position: relative;
+}
+.monthList span{
+  background: #fff;
+  display: inline-block;
+  padding: 0 10px 0 10px;
+  margin-left: 50px;
+  /* line-height: 4px; */
+  z-index: 1;
+  position: relative;
+}
+.monthList:after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  background: #252525;
+position: absolute;
+left: 0;
+}
+.listEvents{
+  margin-top: 50px;
+}
+.eventsCon .title{
+  margin-bottom: 24px;
+}
+.eventDate{
+ 
+  background: #8b59a7;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: normal;
+  padding: 6px;
+  text-align: center;
+ 
+}
+.eventDate span{
+  display: block;
+  font-size: 30px;
+}
+.eventTime, .eventPlace{
+  font-size: 17px;
+    font-weight: 500;
+    padding: 0;
+    line-height: auto;
+    margin: 0 0 15px 0;
+ 
+    text-transform: uppercase;
+    color: #262626;
+    font-family: "Josefin Sans", sans-serif;
+    position: relative;
+}
+.paintingPrice{
+  display: inline-block;
+  background: #262626;
+  color: #fff;
+  font-size: 24px;
+  margin: 5px auto;
+  padding: 5px 5px;
+}
+.paintingsList .cardCon{
+  margin-top: 0;
+}
+.artistNamePageNumber a{
+  padding: 10px 0;
+  line-height: normal;
+  color: #404040;
+  border: 1px solid #8b59a7;
+  width: 40px;
+  text-align: center;
+  margin-right: 5px;
+}
+.artistNamePageNumber a:hover, .artistNamePageNumber a.active{
+      color: #fff;
+  background:#8b59a7;
+}
 @media (max-width: 575px) {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
